@@ -1,0 +1,791 @@
+.
+├── .eslintrc.json
+├── .gitignore
+├── README.md
+├── estructura_anvogue.txt
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   └── images
+│       ├── avatar
+│       │   ├── 1.png
+│       │   ├── 2.png
+│       │   ├── 3.png
+│       │   ├── 4.png
+│       │   ├── 5.png
+│       │   ├── 6.png
+│       │   ├── 7.png
+│       │   └── 8.png
+│       ├── banner
+│       │   ├── 1.png
+│       │   ├── 10.png
+│       │   ├── 11.png
+│       │   ├── 12.png
+│       │   ├── 13.png
+│       │   ├── 14.png
+│       │   ├── 15.png
+│       │   ├── 16.png
+│       │   ├── 17.png
+│       │   ├── 18.png
+│       │   ├── 19.png
+│       │   ├── 2.png
+│       │   ├── 20.png
+│       │   ├── 21.png
+│       │   ├── 22.png
+│       │   ├── 23.png
+│       │   ├── 24.png
+│       │   ├── 25.png
+│       │   ├── 26.png
+│       │   ├── 3.png
+│       │   ├── 4.png
+│       │   ├── 5.png
+│       │   ├── 6.png
+│       │   ├── 7.png
+│       │   ├── 8.png
+│       │   ├── 9.png
+│       │   ├── after.png
+│       │   ├── banner-furniture1.png
+│       │   ├── banner-furniture2.png
+│       │   ├── banner-furniture3.png
+│       │   ├── banner-shop-breadcrumb-img.png
+│       │   ├── before.png
+│       │   ├── bg-banner-organic1.png
+│       │   ├── bg-banner-organic2.png
+│       │   ├── bg-banner-organic3.png
+│       │   ├── bg-banner-pet.png
+│       │   ├── bg-banner-toys.png
+│       │   ├── bg-banner-watch1.png
+│       │   ├── bg-banner-watch2.png
+│       │   ├── bg-banner-watch3.png
+│       │   ├── bg-banner-yoga1.png
+│       │   ├── bg-banner-yoga2.png
+│       │   ├── bg-benefit-yoga.png
+│       │   ├── bg-buy-pack-organic.png
+│       │   ├── bg-choose-us-pet.png
+│       │   ├── bg-feature-pet1.png
+│       │   ├── bg-flash-sale-furniture.png
+│       │   ├── bg-flash-sale-organic.png
+│       │   ├── bg-flash-sale-yoga.png
+│       │   ├── bg-pack-organic.png
+│       │   ├── bg-testi-cos.png
+│       │   ├── community1.png
+│       │   ├── community2.png
+│       │   ├── community3.png
+│       │   ├── community4.png
+│       │   ├── flash-sale-cos2.png
+│       │   ├── image-flash-sale-organic.png
+│       │   ├── lookbook-jewelry1.png
+│       │   ├── lookbook-jewelry2.png
+│       │   ├── marketplace1.png
+│       │   ├── marketplace2.png
+│       │   ├── marketplace3.png
+│       │   ├── marketplace4.png
+│       │   ├── marketplace5.png
+│       │   ├── popular-watch.png
+│       │   ├── video-cos2.png
+│       │   └── video-cos3.png
+│       ├── blog
+│       │   ├── 1.png
+│       │   ├── 2.png
+│       │   ├── 3.png
+│       │   ├── 4.png
+│       │   ├── 5.png
+│       │   ├── 6.png
+│       │   ├── 7.png
+│       │   ├── 8.png
+│       │   ├── 9.png
+│       │   ├── marketplace1.png
+│       │   ├── marketplace2.png
+│       │   ├── marketplace3.png
+│       │   ├── organic1.png
+│       │   ├── organic2.png
+│       │   ├── organic3.png
+│       │   ├── toys1.png
+│       │   ├── toys2.png
+│       │   ├── toys3.png
+│       │   ├── yoga1.png
+│       │   ├── yoga2.png
+│       │   └── yoga3.png
+│       ├── brand
+│       │   ├── 1-1.png
+│       │   ├── 1.png
+│       │   ├── 2-1.png
+│       │   ├── 2.png
+│       │   ├── 3-1.png
+│       │   ├── 3.png
+│       │   ├── 4-1.png
+│       │   ├── 4.png
+│       │   ├── 5-1.png
+│       │   ├── 5.png
+│       │   ├── 6-1.png
+│       │   ├── 6.png
+│       │   ├── 7-1.png
+│       │   └── 7.png
+│       ├── collection
+│       │   ├── accessories-cos.png
+│       │   ├── bed.png
+│       │   ├── body.png
+│       │   ├── category-jewelry1.png
+│       │   ├── category-jewelry2.png
+│       │   ├── category-jewelry3.png
+│       │   ├── category-organic1.png
+│       │   ├── category-organic2.png
+│       │   ├── category-organic3.png
+│       │   ├── category-organic4.png
+│       │   ├── category-organic5.png
+│       │   ├── category-organic6.png
+│       │   ├── category-watch1.png
+│       │   ├── category-watch2.png
+│       │   ├── category-watch3.png
+│       │   ├── category-watch4.png
+│       │   ├── category-watch5.png
+│       │   ├── food.png
+│       │   ├── hair.png
+│       │   ├── marketplace1.png
+│       │   ├── marketplace2.png
+│       │   ├── marketplace3.png
+│       │   ├── marketplace4.png
+│       │   ├── outerwear.png
+│       │   ├── outfit.png
+│       │   ├── pharmacy.png
+│       │   ├── ring.png
+│       │   ├── sets.png
+│       │   ├── skin.png
+│       │   ├── supplements.png
+│       │   ├── swimwear.png
+│       │   ├── t-shirt.png
+│       │   ├── top.png
+│       │   ├── toys.png
+│       │   ├── underwear.png
+│       │   ├── underwear1.png
+│       │   ├── underwear2.png
+│       │   ├── underwear3.png
+│       │   └── underwear4.png
+│       ├── instagram
+│       │   ├── 0.png
+│       │   ├── 1.png
+│       │   ├── 10.png
+│       │   ├── 11.png
+│       │   ├── 12.png
+│       │   ├── 13.png
+│       │   ├── 14.png
+│       │   ├── 15.png
+│       │   ├── 16.png
+│       │   ├── 2.png
+│       │   ├── 3.png
+│       │   ├── 4.png
+│       │   ├── 5.png
+│       │   ├── 6.png
+│       │   ├── 7.png
+│       │   ├── 8.png
+│       │   ├── 9.png
+│       │   ├── furniture1.png
+│       │   ├── furniture2.png
+│       │   ├── furniture3.png
+│       │   ├── furniture4.png
+│       │   ├── furniture5.png
+│       │   ├── jewelry1.png
+│       │   ├── jewelry2.png
+│       │   ├── jewelry3.png
+│       │   ├── jewelry4.png
+│       │   ├── jewelry5.png
+│       │   ├── jewelry6.png
+│       │   ├── pet1.png
+│       │   ├── pet2.png
+│       │   ├── pet3.png
+│       │   ├── pet4.png
+│       │   ├── pet5.png
+│       │   ├── pet6.png
+│       │   ├── watch1.png
+│       │   ├── watch2.png
+│       │   ├── watch3.png
+│       │   ├── watch4.png
+│       │   ├── watch5.png
+│       │   ├── yoga1.png
+│       │   ├── yoga2.png
+│       │   ├── yoga3.png
+│       │   ├── yoga4.png
+│       │   ├── yoga5.png
+│       │   ├── yoga6.png
+│       │   └── yoga7.png
+│       ├── other
+│       │   ├── 404-img.png
+│       │   ├── about-us1.png
+│       │   ├── about-us2.png
+│       │   ├── about-us3.png
+│       │   ├── bg-coming-soon.png
+│       │   ├── bg-feature-cosmetic.png
+│       │   ├── bg-feature-cosmetic3.png
+│       │   ├── bg-feature-furniture.png
+│       │   ├── bg-feature-jewelry.png
+│       │   ├── bg-feature-kid.png
+│       │   ├── bg-feature-organic.png
+│       │   ├── bg-feature-pet.png
+│       │   ├── bg-feature-watch.png
+│       │   ├── bg-feature-yoga.png
+│       │   ├── bg-feature.png
+│       │   ├── store-list-office1.png
+│       │   ├── store-list-office2.png
+│       │   └── store-list-office3.png
+│       ├── payment
+│       │   ├── Frame-0.png
+│       │   ├── Frame-1.png
+│       │   ├── Frame-2.png
+│       │   ├── Frame-3.png
+│       │   ├── Frame-4.png
+│       │   └── Frame-5.png
+│       ├── product
+│       │   ├── 1000x1000.png
+│       │   ├── color
+│       │   │   └── 48x48.png
+│       │   └── material
+│       │       └── 48x48.png
+│       └── slider
+│           ├── bg-cos1-1.png
+│           ├── bg-cos1-2.png
+│           ├── bg-cos1-3.png
+│           ├── bg-cos2-1.png
+│           ├── bg-cos2-2.png
+│           ├── bg-cos2-3.png
+│           ├── bg-cos3-1.png
+│           ├── bg-cos3-2.png
+│           ├── bg-cos3-3.png
+│           ├── bg-furniture1.png
+│           ├── bg-furniture2.png
+│           ├── bg-furniture3.png
+│           ├── bg-jewelry1-1.png
+│           ├── bg-jewelry1-2.png
+│           ├── bg-jewelry1-3.png
+│           ├── bg-pet1-1.png
+│           ├── bg-pet1-2.png
+│           ├── bg-pet1-3.png
+│           ├── bg-toys.png
+│           ├── bg-toys1.png
+│           ├── bg-toys2.png
+│           ├── bg-toys3.png
+│           ├── bg-underwear1.png
+│           ├── bg-underwear2.png
+│           ├── bg1-1.png
+│           ├── bg1-2.png
+│           ├── bg1-3.png
+│           ├── bg10-1.png
+│           ├── bg10-2.png
+│           ├── bg10-3.png
+│           ├── bg11-1.png
+│           ├── bg11-2.png
+│           ├── bg11-3.png
+│           ├── bg2-1.png
+│           ├── bg2-2.png
+│           ├── bg2-3.png
+│           ├── bg3-1.png
+│           ├── bg3-2.png
+│           ├── bg4-1.png
+│           ├── bg4-2.png
+│           ├── bg4-3.png
+│           ├── bg5-1.png
+│           ├── bg5-2.png
+│           ├── bg6-1.png
+│           ├── bg6-2.png
+│           ├── bg6-3.png
+│           ├── bg7-1.png
+│           ├── bg8-1.png
+│           ├── bg8-2.png
+│           ├── bg8-3.png
+│           ├── bg9-1.png
+│           ├── bg9-2.png
+│           ├── bg9-3.png
+│           ├── marketplace.png
+│           ├── organic1.png
+│           ├── organic2.png
+│           ├── organic3.png
+│           ├── watch1.png
+│           ├── watch2.png
+│           ├── watch3.png
+│           ├── yoga1.png
+│           ├── yoga2.png
+│           └── yoga3.png
+├── src
+│   ├── app
+│   │   ├── GlobalProvider.tsx
+│   │   ├── blog
+│   │   │   ├── default
+│   │   │   │   └── page.tsx
+│   │   │   ├── detail1
+│   │   │   │   └── page.tsx
+│   │   │   ├── detail2
+│   │   │   │   └── page.tsx
+│   │   │   ├── grid
+│   │   │   │   └── page.tsx
+│   │   │   └── list
+│   │   │       └── page.tsx
+│   │   ├── cart
+│   │   │   └── page.tsx
+│   │   ├── checkout
+│   │   │   └── page.tsx
+│   │   ├── checkout2
+│   │   │   └── page.tsx
+│   │   ├── compare
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── forgot-password
+│   │   │   └── page.tsx
+│   │   ├── homepages
+│   │   │   ├── cosmetic1
+│   │   │   │   └── page.tsx
+│   │   │   ├── cosmetic2
+│   │   │   │   └── page.tsx
+│   │   │   ├── cosmetic3
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion10
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion11
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion2
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion3
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion4
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion5
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion6
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion7
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion8
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion9
+│   │   │   │   └── page.tsx
+│   │   │   ├── furniture
+│   │   │   │   └── page.tsx
+│   │   │   ├── jewelry
+│   │   │   │   └── page.tsx
+│   │   │   ├── marketplace
+│   │   │   │   └── page.tsx
+│   │   │   ├── organic
+│   │   │   │   └── page.tsx
+│   │   │   ├── pet
+│   │   │   │   └── page.tsx
+│   │   │   ├── toys
+│   │   │   │   └── page.tsx
+│   │   │   ├── underwear
+│   │   │   │   └── page.tsx
+│   │   │   ├── watch
+│   │   │   │   └── page.tsx
+│   │   │   └── yoga
+│   │   │       └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── my-account
+│   │   │   └── page.tsx
+│   │   ├── order-tracking
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   ├── pages
+│   │   │   ├── about
+│   │   │   │   └── page.tsx
+│   │   │   ├── coming-soon
+│   │   │   │   └── page.tsx
+│   │   │   ├── contact
+│   │   │   │   └── page.tsx
+│   │   │   ├── customer-feedbacks
+│   │   │   │   └── page.tsx
+│   │   │   ├── faqs
+│   │   │   │   └── page.tsx
+│   │   │   ├── page-not-found
+│   │   │   │   └── page.tsx
+│   │   │   └── store-list
+│   │   │       └── page.tsx
+│   │   ├── product
+│   │   │   ├── bought-together
+│   │   │   │   └── page.tsx
+│   │   │   ├── combined-one
+│   │   │   │   └── page.tsx
+│   │   │   ├── combined-two
+│   │   │   │   └── page.tsx
+│   │   │   ├── countdown-timer
+│   │   │   │   └── page.tsx
+│   │   │   ├── default
+│   │   │   │   └── page.tsx
+│   │   │   ├── discount
+│   │   │   │   └── page.tsx
+│   │   │   ├── external
+│   │   │   │   └── page.tsx
+│   │   │   ├── fixed-price
+│   │   │   │   └── page.tsx
+│   │   │   ├── grouped
+│   │   │   │   └── page.tsx
+│   │   │   ├── on-sale
+│   │   │   │   └── page.tsx
+│   │   │   ├── one-scrolling
+│   │   │   │   └── page.tsx
+│   │   │   ├── out-of-stock
+│   │   │   │   └── page.tsx
+│   │   │   ├── sale
+│   │   │   │   └── page.tsx
+│   │   │   ├── sidebar
+│   │   │   │   └── page.tsx
+│   │   │   ├── styles
+│   │   │   │   ├── style1
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── style2
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── style3
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── style4
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── style5
+│   │   │   │       └── page.tsx
+│   │   │   ├── thumbnail-bottom
+│   │   │   │   └── page.tsx
+│   │   │   ├── thumbnail-left
+│   │   │   │   └── page.tsx
+│   │   │   ├── two-scrolling
+│   │   │   │   └── page.tsx
+│   │   │   └── variable
+│   │   │       └── page.tsx
+│   │   ├── register
+│   │   │   └── page.tsx
+│   │   ├── search-result
+│   │   │   └── page.tsx
+│   │   ├── shop
+│   │   │   ├── breadcrumb-img
+│   │   │   │   └── page.tsx
+│   │   │   ├── breadcrumb1
+│   │   │   │   └── page.tsx
+│   │   │   ├── breadcrumb2
+│   │   │   │   └── page.tsx
+│   │   │   ├── collection
+│   │   │   │   └── page.tsx
+│   │   │   ├── default
+│   │   │   │   └── page.tsx
+│   │   │   ├── default-grid
+│   │   │   │   └── page.tsx
+│   │   │   ├── default-list
+│   │   │   │   └── page.tsx
+│   │   │   ├── filter-canvas
+│   │   │   │   └── page.tsx
+│   │   │   ├── filter-dropdown
+│   │   │   │   └── page.tsx
+│   │   │   ├── filter-options
+│   │   │   │   └── page.tsx
+│   │   │   ├── fullwidth
+│   │   │   │   └── page.tsx
+│   │   │   ├── sidebar-list
+│   │   │   │   └── page.tsx
+│   │   │   └── square
+│   │   │       └── page.tsx
+│   │   └── wishlist
+│   │       └── page.tsx
+│   ├── components
+│   │   ├── Blog
+│   │   │   └── BlogItem.tsx
+│   │   ├── Breadcrumb
+│   │   │   ├── Breadcrumb.tsx
+│   │   │   └── BreadcrumbProduct.tsx
+│   │   ├── Cosmetic1
+│   │   │   ├── AdsPhoto.jsx
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── BuyPack.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── CommunityStory.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── LookBook.tsx
+│   │   │   ├── NewArrival.tsx
+│   │   │   └── Testimonial.tsx
+│   │   ├── Cosmetic2
+│   │   │   ├── Banner.tsx
+│   │   │   ├── FeaturedProduct.tsx
+│   │   │   ├── FlashSale.tsx
+│   │   │   ├── NewsInsight.tsx
+│   │   │   ├── TabFeatures.tsx
+│   │   │   └── VideoTutorial.tsx
+│   │   ├── Cosmetic3
+│   │   │   ├── Banner.tsx
+│   │   │   ├── BannerTop.tsx
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── BestSellers.tsx
+│   │   │   ├── FeaturedProduct.tsx
+│   │   │   ├── HotProduct.tsx
+│   │   │   ├── Newsletter.tsx
+│   │   │   └── VideoTutorial.tsx
+│   │   ├── Footer
+│   │   │   └── Footer.tsx
+│   │   ├── Furniture
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── FeatureProduct.tsx
+│   │   │   ├── FlashSale.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── MenuCategory.tsx
+│   │   │   ├── TabFeatures.tsx
+│   │   │   └── Testimonial.tsx
+│   │   ├── Header
+│   │   │   ├── Menu
+│   │   │   │   ├── MenuCosmeticOne.tsx
+│   │   │   │   ├── MenuCosmeticThree.tsx
+│   │   │   │   ├── MenuEight.tsx
+│   │   │   │   ├── MenuEleven.tsx
+│   │   │   │   ├── MenuFour.tsx
+│   │   │   │   ├── MenuFurniture.tsx
+│   │   │   │   ├── MenuJewelry.tsx
+│   │   │   │   ├── MenuMarketplace.tsx
+│   │   │   │   ├── MenuOne.tsx
+│   │   │   │   ├── MenuOrganic.tsx
+│   │   │   │   ├── MenuPet.tsx
+│   │   │   │   ├── MenuToys.tsx
+│   │   │   │   ├── MenuTwo.tsx
+│   │   │   │   ├── MenuWatch.tsx
+│   │   │   │   └── MenuYoga.tsx
+│   │   │   └── TopNav
+│   │   │       ├── TopNavOne.tsx
+│   │   │       └── TopNavThree.tsx
+│   │   ├── Home1
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── Brand.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── TabFeatures.tsx
+│   │   │   ├── Testimonial.tsx
+│   │   │   └── WhatNewOne.tsx
+│   │   ├── Home10
+│   │   │   └── Newsletter.tsx
+│   │   ├── Home11
+│   │   │   ├── MenFashion.tsx
+│   │   │   ├── TrendingNow.tsx
+│   │   │   └── WomenFashion.tsx
+│   │   ├── Home2
+│   │   │   ├── Collection.tsx
+│   │   │   └── TabFeatures.tsx
+│   │   ├── Home3
+│   │   │   ├── BannerTop.tsx
+│   │   │   ├── FlashSale.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── NewsInsight.tsx
+│   │   │   └── TrendingProduct.tsx
+│   │   ├── Home4
+│   │   │   ├── BannerTop.tsx
+│   │   │   ├── BestSellers.tsx
+│   │   │   ├── Newsletter.tsx
+│   │   │   └── Testimonial.tsx
+│   │   ├── Home5
+│   │   │   ├── Banner.tsx
+│   │   │   └── FlashSale.tsx
+│   │   ├── Home6
+│   │   │   ├── BestSaleProduct.tsx
+│   │   │   ├── Brand.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── FlashSale.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── PopularProduct.tsx
+│   │   │   └── Testimonial.tsx
+│   │   ├── Home7
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Deal.tsx
+│   │   │   ├── Testimonial.tsx
+│   │   │   └── TrendingNow.tsx
+│   │   ├── Home8
+│   │   │   ├── Banner.tsx
+│   │   │   └── Collection.tsx
+│   │   ├── Home9
+│   │   │   ├── Banner.tsx
+│   │   │   └── TrendingNow.tsx
+│   │   ├── Jewelry
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── FeaturedProduct.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── Lookbook.tsx
+│   │   │   ├── Quote.tsx
+│   │   │   └── TabFeatures.tsx
+│   │   ├── Marketplace
+│   │   │   ├── BannerAbove.tsx
+│   │   │   ├── BannerBelow.tsx
+│   │   │   ├── BestSeller.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── Deal.tsx
+│   │   │   ├── Recommend.tsx
+│   │   │   └── TopProduct.tsx
+│   │   ├── Modal
+│   │   │   ├── ModalCart.tsx
+│   │   │   ├── ModalCompare.tsx
+│   │   │   ├── ModalNewsletter.tsx
+│   │   │   ├── ModalQuickview.tsx
+│   │   │   ├── ModalSearch.tsx
+│   │   │   ├── ModalSizeguide.tsx
+│   │   │   └── ModalWishlist.tsx
+│   │   ├── Organic
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Brand.tsx
+│   │   │   ├── BuyPack.tsx
+│   │   │   ├── Category.tsx
+│   │   │   ├── FlashSale.tsx
+│   │   │   └── PopularProduct.tsx
+│   │   ├── Other
+│   │   │   ├── HandlePagination.tsx
+│   │   │   ├── Loading.tsx
+│   │   │   └── Rate.tsx
+│   │   ├── Pet
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Banner2.tsx
+│   │   │   ├── ChooseUs.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── FeatureProduct.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   └── TabFeatures.tsx
+│   │   ├── Product
+│   │   │   ├── Detail
+│   │   │   │   ├── BoughtTogether.tsx
+│   │   │   │   ├── CountdownTimer.tsx
+│   │   │   │   ├── Default.tsx
+│   │   │   │   ├── Discount.tsx
+│   │   │   │   ├── External.tsx
+│   │   │   │   ├── FixedPrice.tsx
+│   │   │   │   ├── Grouped.tsx
+│   │   │   │   ├── OnSale.tsx
+│   │   │   │   ├── OutOfStock.tsx
+│   │   │   │   ├── Sale.tsx
+│   │   │   │   ├── Sidebar.tsx
+│   │   │   │   └── VariableProduct.tsx
+│   │   │   └── Product.tsx
+│   │   ├── Shop
+│   │   │   ├── ShopBreadCrumb1.tsx
+│   │   │   ├── ShopBreadCrumb2.tsx
+│   │   │   ├── ShopBreadCrumbImg.tsx
+│   │   │   ├── ShopCollection.tsx
+│   │   │   ├── ShopFilterCanvas.tsx
+│   │   │   ├── ShopFilterDropdown.tsx
+│   │   │   ├── ShopFilterOptions.tsx
+│   │   │   └── ShopSidebarList.tsx
+│   │   ├── Slider
+│   │   │   ├── SliderCosmeticOne.tsx
+│   │   │   ├── SliderCosmeticThree.tsx
+│   │   │   ├── SliderCosmeticTwo.tsx
+│   │   │   ├── SliderEight.tsx
+│   │   │   ├── SliderEleven.tsx
+│   │   │   ├── SliderFive.tsx
+│   │   │   ├── SliderFour.tsx
+│   │   │   ├── SliderFurniture.tsx
+│   │   │   ├── SliderJewelry.tsx
+│   │   │   ├── SliderMarketplace.tsx
+│   │   │   ├── SliderNine.tsx
+│   │   │   ├── SliderOne.tsx
+│   │   │   ├── SliderOrganic.tsx
+│   │   │   ├── SliderPet.tsx
+│   │   │   ├── SliderSeven.tsx
+│   │   │   ├── SliderSix.tsx
+│   │   │   ├── SliderTen.tsx
+│   │   │   ├── SliderThree.tsx
+│   │   │   ├── SliderToysKid.tsx
+│   │   │   ├── SliderTwo.tsx
+│   │   │   ├── SliderUnderwear.tsx
+│   │   │   ├── SliderWatch.tsx
+│   │   │   └── SliderYoga.tsx
+│   │   ├── Testimonial
+│   │   │   └── TestimonialItem.tsx
+│   │   ├── Toys
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── FeaturedProduct.tsx
+│   │   │   ├── NewsInsight.tsx
+│   │   │   ├── TabFeatures.tsx
+│   │   │   └── WeekProduct.tsx
+│   │   ├── Underwear
+│   │   │   ├── Benefit.tsx
+│   │   │   ├── Brand.tsx
+│   │   │   ├── Collection.tsx
+│   │   │   ├── FeaturedProduct.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── LookBook.tsx
+│   │   │   ├── OurBlog.tsx
+│   │   │   ├── TabFeatures.tsx
+│   │   │   ├── Testimonial.tsx
+│   │   │   └── TrendingProduct.tsx
+│   │   ├── Watch
+│   │   │   ├── Banner.tsx
+│   │   │   ├── Category.tsx
+│   │   │   ├── FeaturedProduct.tsx
+│   │   │   ├── Instagram.tsx
+│   │   │   ├── PopularProduct.tsx
+│   │   │   ├── TabFeature.tsx
+│   │   │   └── TrendingProduct.tsx
+│   │   └── Yoga
+│   │       ├── Banner.tsx
+│   │       ├── BestSeller.tsx
+│   │       ├── FlashSale.tsx
+│   │       ├── Instagram.tsx
+│   │       ├── TabFeatures.tsx
+│   │       ├── Testimonial.tsx
+│   │       └── WhyChooseUs.tsx
+│   ├── context
+│   │   ├── CartContext.tsx
+│   │   ├── CompareContext.tsx
+│   │   ├── ModalCartContext.tsx
+│   │   ├── ModalCompareContext.tsx
+│   │   ├── ModalQuickviewContext.tsx
+│   │   ├── ModalSearchContext.tsx
+│   │   ├── ModalWishlistContext.tsx
+│   │   └── WishlistContext.tsx
+│   ├── data
+│   │   ├── Blog.json
+│   │   ├── Product.json
+│   │   └── Testimonial.json
+│   ├── store
+│   │   ├── countdownTime.tsx
+│   │   ├── useLoginPopup.tsx
+│   │   ├── useMenuMobile.tsx
+│   │   ├── useShopDepartmentPopup.tsx
+│   │   ├── useSubMenuDepartment.tsx
+│   │   └── useWishlist.tsx
+│   ├── styles
+│   │   ├── blog.scss
+│   │   ├── cart.scss
+│   │   ├── compare.scss
+│   │   ├── custom-swiper.scss
+│   │   ├── faqs.scss
+│   │   ├── footer.scss
+│   │   ├── globals.scss
+│   │   ├── header.scss
+│   │   ├── icomoon
+│   │   │   ├── Read Me.txt
+│   │   │   ├── demo-files
+│   │   │   │   ├── demo.css
+│   │   │   │   └── demo.js
+│   │   │   ├── demo.html
+│   │   │   ├── fonts
+│   │   │   │   ├── icomoon.eot
+│   │   │   │   ├── icomoon.svg
+│   │   │   │   ├── icomoon.ttf
+│   │   │   │   └── icomoon.woff
+│   │   │   ├── selection.json
+│   │   │   └── style.css
+│   │   ├── layout
+│   │   │   ├── banner.scss
+│   │   │   ├── benefit.scss
+│   │   │   ├── category-active.scss
+│   │   │   ├── collection.scss
+│   │   │   ├── featured-product.scss
+│   │   │   ├── instagram.scss
+│   │   │   ├── newsletter.scss
+│   │   │   ├── tab-features.scss
+│   │   │   ├── testimonial.scss
+│   │   │   └── text-has-line-before.scss
+│   │   ├── loading.scss
+│   │   ├── modal.scss
+│   │   ├── product.scss
+│   │   ├── shop.scss
+│   │   └── styles.scss
+│   └── type
+│       ├── BlogType.tsx
+│       ├── CountdownType.tsx
+│       ├── ProductType.tsx
+│       └── TestimonialType.tsx
+├── tailwind.config.ts
+└── tsconfig.json
+
+150 directories, 639 files

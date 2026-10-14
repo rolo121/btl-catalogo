@@ -1,0 +1,10 @@
+.newsletter-block.bg-primary-soft .text-white,
+.newsletter-block.bg-transparent .text-white {
+    color: var(--black);
+}
+
+.newsletter-block.bg-primary-soft .button-main,
+.newsletter-block.bg-transparent .button-main {
+    background-color: var(--black);
+    color: var(--white);
+}

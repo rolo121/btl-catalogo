@@ -1,0 +1,29 @@
+@use 'custom-swiper';
+@use 'loading';
+@use 'globals';
+@use 'modal';
+@use 'header';
+@use 'footer';
+@use 'product';
+@use 'blog';
+@use 'shop';
+@use 'faqs';
+@use 'cart';
+@use 'compare';
+@use 'layout/category-active';
+@use 'layout/text-has-line-before';
+@use 'layout/collection';
+@use 'layout/tab-features';
+@use 'layout/banner';
+@use 'layout/testimonial';
+@use 'layout/instagram';
+@use 'layout/benefit';
+@use 'layout/newsletter';
+@use 'layout/featured-product';
+
+@import 'icomoon/style.css';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,530 @@
+/* Main color - BTL Marketing */
+:root {
+  /* BTL Marketing brand */
+  --primary: #21577B;
+  --primary-dark: #1F2E53;
+  --primary-hover: #173F5A;
+  --primary-soft: #EAF3F6;
+
+  --brand-secondary: #38A0A2;
+  --brand-secondary-soft: #E6F5F5;
+  --brand-secondary-muted: #79BFC0;
+  --brand-accent: #8DBC21;
+  --brand-accent-soft: #F1F7E3;
+
+  --text-strong: #1F2E53;
+  --text: #263852;
+  --text-secondary: #52637A;
+  --text-muted: #748197;
+  --text-soft: #9AA5B5;
+
+  --secondary: var(--text-secondary);
+  --secondary2: var(--text-muted);
+
+  --white: #FFFFFF;
+  --surface: #F7FAFC;
+  --surface-alt: #EEF5F7;
+  --surface-warm: #F2F7F5;
+  --line: #DCE6EA;
+
+  --brand-dark: #1F2E53;
+  --brand-brown: #21577B;
+
+  --success: #4E8B16;
+  --whatsapp: #25D366;
+  --danger: #D92D20;
+  --info: #21577B;
+
+  --black: var(--text-strong);
+  --green: var(--brand-accent-soft);
+  --yellow: var(--brand-accent);
+  --red: var(--danger);
+  --purple: #6575A8;
+  --pink: #C7658F;
+
+  --outline: rgba(31, 46, 83, 0.14);
+  --surface1: rgba(255, 255, 255, 0.1);
+  --surface2: rgba(255, 255, 255, 0.2);
+  --shadow-soft: 0 12px 32px rgba(31, 46, 83, 0.09);
+  --shadow-brand: 0 14px 30px rgba(33, 87, 123, 0.2);
+}
+
+
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text);
+  background-color: var(--surface);
+  font-weight: 400;
+  overflow-x: hidden;
+  user-select: text;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-strong);
+}
+
+p {
+  color: inherit;
+}
+
+div,
+span,
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+select {
+  appearance: none;
+  outline: none;
+}
+
+.select-block {
+  position: relative;
+
+  >.arrow-down {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+  }
+}
+
+input,
+textarea {
+  outline: none;
+  border: 1px solid transparent;
+  transition: border-color ease 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+}
+
+input[type="file"] {
+  outline: none;
+  border: none !important;
+
+  &::-webkit-file-upload-button {
+    display: none;
+  }
+}
+
+/* Main class used in Anvogue */
+.container {
+  max-width: 1322px !important;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0 auto;
+}
+
+.bg-danger {
+  background-color: var(--red);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-blue {
+  background-color: #4856DA;
+}
+
+.bg-silver {
+  background-color: #a1a2af;
+}
+
+.bg-linear {
+  background: linear-gradient(238deg, var(--surface-alt) 0%, var(--surface) 99.66%);
+}
+
+.box-shadow-xs {
+  box-shadow: 0px 2px 2px 0px #1C24331A;
+}
+
+.box-shadow-sm {
+  box-shadow: 0px 10px 25px 0px rgba(43, 52, 74, 0.12);
+}
+
+.text-sub-display {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.text-display {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 88px;
+  text-transform: capitalize;
+}
+
+.heading1 {
+  font-size: 56px;
+  line-height: 68px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.heading2 {
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.heading3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.heading4 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.heading5 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.heading6 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.text-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.body1 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.text-button {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.text-button-uppercase {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.caption1 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.caption2 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.button-main {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 16px 40px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: var(--shadow-brand);
+  transition: all ease 0.3s;
+
+  &:hover {
+    background: var(--black);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(17, 24, 39, 0.18);
+
+    svg {
+      path {
+        fill: var(--white);
+      }
+    }
+  }
+
+  &.bg-white {
+    background: var(--white);
+    color: var(--primary-dark);
+    border-color: var(--primary);
+    box-shadow: none;
+
+    &:hover {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: var(--shadow-brand);
+
+      svg {
+        path {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+}
+/* BTL Marketing utility classes */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-primary-soft {
+  background-color: var(--primary-soft);
+}
+
+.bg-brand-secondary-soft {
+  background-color: var(--secondary-soft);
+}
+
+.bg-surface-warm {
+  background-color: var(--surface-warm);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-primary-dark {
+  color: var(--primary-dark);
+}
+
+.text-text-strong {
+  color: var(--text-strong);
+}
+
+.text-text {
+  color: var(--text);
+}
+
+.text-text-text-secondary,
+.text-text-secondary-brand {
+  color: var(--text-text-secondary);
+}
+
+.text-text-muted {
+  color: var(--text-muted);
+}
+
+.text-brand-brown {
+  color: var(--brand-brown);
+}
+
+.border-brand {
+  border-color: var(--primary);
+}
+
+.border-line {
+  border-color: var(--line);
+}
+
+.badge-brand {
+  background-color: var(--primary-soft);
+  color: var(--primary-dark);
+  border: 1px solid rgba(242, 106, 27, 0.18);
+}
+
+.badge-success {
+  background-color: #EAF8EF;
+  color: var(--success);
+}
+
+.badge-info {
+  background-color: #EAF1FF;
+  color: var(--info);
+}
+
+
+@media (max-width: 1023.99px) {
+  .text-sub-display {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.1px;
+  }
+
+  .text-display {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .heading1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .heading2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .heading3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .heading4 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .heading5 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .heading6 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .button-main {
+    padding: 12px 24px;
+    border-radius: 999px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  html,
+  body,
+  div,
+  span,
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .text-sub-display {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+  }
+
+  .text-display {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .heading1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .heading2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .heading3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .heading4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .heading5 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .heading6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .body1 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .text-button {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .text-button-uppercase {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .caption1 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .button-main {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 16px;
+    border-radius: 999px;
+  }
+}
+/*quitar decoraciones del input en producto
+/* Quitar flechas en input type="number" */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
